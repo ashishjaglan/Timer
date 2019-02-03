@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="354dp"
+        android:layout_height="392dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginBottom="61dp"
+        app:srcCompat="@raw/c" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="85dp"
+        android:onClick="startTimer"
+        android:text="Start"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="107dp"
+        android:text="0:30"
+        android:textColor="@android:color/background_dark"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/totalTime"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/timer"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="196dp"
+        android:text="TextView"
+        android:textColor="@android:color/black" />
+
+    <SeekBar
+        android:id="@+id/timerSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-217dp"
+        android:layout_toStartOf="@+id/timer"
+        android:max="10"
+        android:progress="3" />
+
+</RelativeLayout>
